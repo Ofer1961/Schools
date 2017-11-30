@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<script>
+			var Schools =[
+				{
+					schoolName: 'Ort',
+					Students: [
+						{
+							firstName: 'Ofer',
+							lastName: 'Peer',
+							average: 75
+						},
+						{
+							firstName: 'Moti',
+							lastName: 'Peer',
+							average: 80
+						},
+						{
+							firstName: 'Erez',
+							lastName: 'Peer',
+							average: 95
+						}
+					]
+				},
+				{
+					schoolName: 'Amal',
+					Students: [
+						{
+							firstName: 'Ofer',
+							lastName: 'Peer',
+							average: 75
+						},
+						{
+							firstName: 'Moti',
+							lastName: 'Peer',
+							average: 80
+						},
+						{
+							firstName: 'Erez',
+							lastName: 'Peer',
+							average: 95
+						},
+						{
+							firstName: 'Oren',
+							lastName: 'Peer',
+							average: 92
+						}
+					]
+				}
+			];
+
+			for(var i = 0;i<Schools.length;i++){
+				var message = i + ' ' + Schools[i].schoolName;
+				message += ' ' + Schools[i].Students.length + ' Students';
+				alert(message);
+				for(var t = 0;t<Schools[i].Students.length;t++){
+					message = Schools[i].Students[t].firstName + ' ' + Schools[i].Students[t].lastName + ' ' + Schools[i].Students[t].average;
+					alert(message);				
+				}			
+			}
+			
+		</script>
+	</head>
+	
+	<body>
+	<h1>-------</h1>
+	</body>
+</html>
